@@ -1,0 +1,21 @@
+.product{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.product-img{
+    padding: 10px;
+}
+.product-details {
+    padding: 10px;
+}
+.product-details h4{
+    color: rgba(0, 0, 255, 0.863);
+    font-weight: 500;
+}
+.cart-btn{
+    padding: 5px 50px;
+    background-color: #f0c14b;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.header img {
+    height: 80px;
+}
+.header{
+    text-align: center;
+}
+.navbar{
+    background: black;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: left;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin-left: 20px;
+}
+.navbar a:hover{
+    background: gainsboro;
+}
