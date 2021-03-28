@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Cart = (props) => {
     const cart = props.cart;
 
@@ -9,7 +10,7 @@ let total = 0;
 // const totalPrice = parseFloat(total);
  for (let i = 0; i < cart.length; i++) {
      const product = cart[i];
-     total = total + product.price;
+     total = total + product.price * product.quantity || 1;
  }
 
  let shipping = 0;
@@ -26,6 +27,8 @@ let total = 0;
             <p>Items ordered: {cart.length}</p>
             <p><small>Shipping & Handling: {shipping}</small></p>
             <p>Tota price: {total + shipping}</p>
+            <br></br>
+            { props.children }
         </div>
     );
 };
